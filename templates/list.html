@@ -7,7 +7,7 @@
 <body>
   <h1>Все кандидаты</h1>
   {% for item in data %}
-  <a href="/candidate/{{link}}/">{{item}}</a><br>
+  <a href="/candidate/{{item.id}}/">{{item.name}}</a><br>
   {% endfor%}
 </body>
 </html>
