@@ -28,6 +28,7 @@ def get_candidate_by_name(candidate_name):
         return render_template('candidate_name.html', cand_by_name=cand_by_name)
     return "Not Found"
 
+
 @app.route('/skill/<skill_name>/')
 def candidate_by_skill(skill_name):
     cand_by_ckill = get_candidates_by_skill(skill_name, candidate_list_obj)

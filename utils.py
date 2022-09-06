@@ -49,4 +49,3 @@ def get_candidates_by_skill(skill_name, candidate_list_obj):
         if skill_name.lower() in candidate.skills.lower():
             candidate__by_skill.append(candidate)
     return candidate__by_skill
-

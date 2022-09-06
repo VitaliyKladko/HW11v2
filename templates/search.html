@@ -7,7 +7,7 @@
 <body>
     <h1>Найдено со скиллом {{skill}}:<h1>
         {% for item in data %}
-        <a href="{{what}}">{{item}}</a><br>
+        <a href="/candidate/{{item.id}}">{{item.name}}</a><br>
         {% endfor%}
 </body>
 </html>
