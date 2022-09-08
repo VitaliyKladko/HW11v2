@@ -32,7 +32,9 @@ def get_candidate_by_name(candidate_name):
 @app.route('/skill/<skill_name>/')
 def candidate_by_skill(skill_name):
     cand_by_ckill = get_candidates_by_skill(skill_name, candidate_list_obj)
-    return render_template('search.html', data=cand_by_ckill, skill=skill_name)
+    if cand_by_ckill:
+        return render_template('search.html', data=cand_by_ckill, skill=skill_name)
+    return 'Not Found'
 
 if __name__ == '__main__':
     app.run()
